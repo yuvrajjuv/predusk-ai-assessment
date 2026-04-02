@@ -1,39 +1,103 @@
-Multi-Object Detection & Tracking (YOLOv8)
+🚀 YOLOv8 Object Detection & Tracking
 
-📌 Overview
+A real-time multi-object detection and tracking system built using YOLOv8 and deployed with a Streamlit web app.
 
-This project implements multi-object detection and tracking using YOLOv8 on a sports video.
+---
 
-🚀 Approach
+🌐 Live Demo
 
-- Used YOLOv8 (Ultralytics) for object detection
-- Used built-in tracking ("model.track") for persistent IDs
-- Processed video frame-by-frame using OpenCV
-- Saved annotated output video with bounding boxes and IDs
+👉 https://yolo-tracking-app.streamlit.app/
 
-🛠️ Setup Instructions
+---
 
-pip install ultralytics opencv-python
+📂 GitHub Repository
 
-▶️ How to Run
+👉 https://github.com/yuvrajjuv/predusk-ai-assessment
 
-- Place video in "data/"
-- Run notebook: "ai_assessment.ipynb"
+---
 
-📁 Output
+🎯 Project Overview
 
-- Output video saved in: "outputs/output.mp4"
+This project implements real-time object detection and tracking using YOLOv8.
+Users can upload a video, and the system processes it to detect and track multiple objects (like people, balls, etc.) with bounding boxes and IDs.
 
-⚠️ Assumptions
+---
 
-- Public sports video used
-- Objects include players and ball
+✨ Features
 
-❌ Limitations
+- 🎯 YOLOv8-based object detection
+- 🔄 Multi-object tracking using "persist=True"
+- 📹 Upload video for processing
+- 🧠 Real-time inference with bounding boxes
+- 🌐 Streamlit web interface
+- 💾 Processed video output generation
 
-- ID switching may occur in occlusion
-- Small objects detection not always accurate
+---
 
-🤖 Model Used
+🛠️ Tech Stack
 
-- YOLOv8n (lightweight model)
+- Python
+- YOLOv8 (Ultralytics)
+- OpenCV
+- Streamlit
+- NumPy
+
+---
+
+⚙️ Installation (Local Setup)
+
+git clone https://github.com/yuvrajjuv/predusk-ai-assessment
+cd predusk-ai-assessment
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate   # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+---
+
+▶️ Run Locally
+
+streamlit run app.py
+
+---
+
+📁 Project Structure
+
+predusk-ai-assessment/
+│
+├── data/                # Input video
+├── outputs/             # Processed video output
+├── notebooks/           # Jupyter notebook (development)
+├── app.py               # Streamlit app
+├── requirements.txt     # Dependencies
+└── README.md
+
+---
+
+📸 Sample Output
+
+- Detects multiple objects (e.g., persons, sports ball)
+- Assigns tracking IDs
+- Displays bounding boxes on video frames
+
+---
+
+🚀 Deployment
+
+The app is deployed using Streamlit Cloud.
+
+---
+
+👨‍💻 Author
+
+Yuvraj Malviya
+GitHub: https://github.com/yuvrajjuv
+
+---
+
+⭐ If you like this project
+
+Give it a star ⭐ on GitHub!
